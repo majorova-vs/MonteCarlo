@@ -57,7 +57,7 @@ namespace MonteCarlo
             {
                 
                     DrawPoint(i, g);
-                Thread.Sleep(Convert.ToInt32(this.textBoxSpeed.Text));
+                //Thread.Sleep(Convert.ToInt32(this.textBoxSpeed.Text));
             }
             // }
             // mutexObj.ReleaseMutex();
@@ -77,6 +77,7 @@ namespace MonteCarlo
             Thread.Sleep(1);
             if (InCircle(Convert.ToInt32(this.textBoxRad.Text), x, y)) insideCircleCnt++;
             //k.DrawRectangle(pen, 205, 5, 1, 1);
+            Thread.Sleep(Convert.ToInt32(this.textBoxSpeed.Text));
         }
 
         bool InCircle(double radius, double x, double y)
